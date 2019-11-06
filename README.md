@@ -7,6 +7,11 @@ async () => {
 }()
 ```
 
+### Terminate Browser
+```js
+await browser.close();
+```
+
 ### Using Puppeteer with Jest for testing
 * _Install Jest and Puppeteer_  
 * _Set an npm script = {"test" : "jest"}_  
