@@ -22,7 +22,7 @@ test('Testing a browser launch', async () => {
 ```
 
 ### Simple Use of $eval (How it works?)
-* _Callback function gets serialized (transformed into text) and being sent to browser_  
+* _Callback function `el => el.innerHTML` gets serialized (transformed into text) and being sent to browser_  
 * _Runs `$` Selector function in the browser with the given Css Selector_  
 * _Browser executes `$('a.brand-logo)` then `el => el.innerHTML`_
 ```js
