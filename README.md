@@ -1,3 +1,7 @@
+### Main Documentation
+[API Docs](https://github.com/GoogleChrome/puppeteer/blob/master/docs/api.md)
+
+
 ### Launch a browser, create a page
 _Should be encapsulated inside of a async function since it is using `await`_
 ```js
@@ -33,7 +37,21 @@ test('Testing a browser launch', async () => {
 ```js
 const text = await page.$eval('a.brand-logo, el => el.innerHTML);
 
-// For testing
-expect(text).toEqual("This string is expected")
+/* For testing */
+expect(text).toEqual("This string is expected");
+```
+
+### Waiting for an element to appear
+```js
+```
+
+### Click an element
+```js
+await page.click('.mydiv a');
+```
+
+### Retrieving Page URL
+```js
+const url = await page.url();
 ```
 
