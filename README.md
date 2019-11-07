@@ -53,5 +53,8 @@ await page.click('.mydiv a');
 ### Retrieving Page URL
 ```js
 const url = await page.url();
+
+// Testing with Regex
+expect(url).toMatch(/accounts\.google\.com/);
 ```
 
