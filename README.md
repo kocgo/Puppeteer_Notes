@@ -41,8 +41,11 @@ const text = await page.$eval('a.brand-logo, el => el.innerHTML);
 expect(text).toEqual("This string is expected");
 ```
 
-### Waiting for an element to appear
+### Waiting
+__Wait for Selector/Function/Timeout__  
+__Arguments = Selector, {Options}, [args]__  
 ```js
+await page.waitFor('a[href="/auth/logout"]', {timeout: 480000} );
 ```
 
 ### Click an element
@@ -60,5 +63,5 @@ expect(url).toMatch(/accounts\.google\.com/);
 
 ### Manipulating Cookies
 ```js
-page.setCookie({ name : "username", value: "gokhan" });
+await page.setCookie({ name : "username", value: "gokhan" });
 ```
