@@ -42,8 +42,8 @@ expect(text).toEqual("This string is expected");
 ```
 
 ### Waiting
-__Wait for Selector/Function/Timeout__  
-__Arguments = Selector, {Options}, [args]__  
+* _Wait for Selector/Function/Timeout_ 
+* _Arguments = Selector, {Options}, [args]_  
 ```js
 await page.waitFor('a[href="/auth/logout"]', {timeout: 480000} );
 ```
