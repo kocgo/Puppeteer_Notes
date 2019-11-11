@@ -58,3 +58,7 @@ const url = await page.url();
 expect(url).toMatch(/accounts\.google\.com/);
 ```
 
+### Manipulating Cookies
+```js
+page.setCookie({ name : "username", value: "gokhan" });
+```
